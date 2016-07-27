@@ -10,6 +10,7 @@ Base class for random access stores, such as
 
 - ensures the store has been `.open()`ed
 - verifies and defaults arguments
+- provides stubs for unimplemented functions
 - emits `open` and `close` events
 
 ## Example
