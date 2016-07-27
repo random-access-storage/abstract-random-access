@@ -4,7 +4,13 @@
   "description": "Base class for random access stores",
   "repository": "juliangruber/abstract-random-access",
   "license": "MIT",
+  "scripts": {
+    "test": "standard"
+  },
   "dependencies": {
     "inherits": "^2.0.1"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
   }
 }

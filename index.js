@@ -40,7 +40,7 @@ Abstract.prototype.write = function (offset, buffer, callback) {
   function next (err) {
     if (err) return callback(err)
     if (typeof self._write !== 'function') return process.nextTick(callback)
-    self._write(offset, buffer, callback) 
+    self._write(offset, buffer, callback)
   }
 }
 
@@ -69,7 +69,7 @@ Abstract.prototype.close = function (callback) {
   else next()
 
   function next (err) {
-    if (err) return cb(err)
+    if (err) return callback(err)
     if (typeof self._close !== 'function') process.nextTick(closed)
     self._close(closed)
   }
@@ -94,7 +94,7 @@ Abstract.prototype.end = function (options, callback) {
   else next()
 
   function next (err) {
-    if (err) return cb(err)
+    if (err) return callback(err)
     if (typeof self._end !== 'function') process.nextTick(callback)
     else self._end(options, callback)
   }
@@ -108,7 +108,7 @@ Abstract.prototype.unlink = function (callback) {
   else next()
 
   function next (err) {
-    if (err) return cb(err)
+    if (err) return callback(err)
     if (typeof self._unlink !== 'function') process.nextTick(callback)
     else self._unlink(callback)
   }
