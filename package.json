@@ -1,6 +1,6 @@
 {
   "name": "abstract-random-access",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Base class for random access stores",
   "repository": "juliangruber/abstract-random-access",
   "license": "MIT",
