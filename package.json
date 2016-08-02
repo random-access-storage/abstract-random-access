@@ -5,12 +5,13 @@
   "repository": "juliangruber/abstract-random-access",
   "license": "MIT",
   "scripts": {
-    "test": "standard"
+    "test": "standard && tape test.js"
   },
   "dependencies": {
     "inherits": "^2.0.1"
   },
   "devDependencies": {
-    "standard": "^7.1.2"
+    "standard": "^7.1.2",
+    "tape": "^4.6.0"
   }
 }
