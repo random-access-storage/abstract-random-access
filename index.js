@@ -128,7 +128,7 @@ Abstract.prototype.end = function (options, callback) {
   }
 }
 
-Abstract.prototype._end = function (callback) {
+Abstract.prototype._end = function (options, callback) {
   process.nextTick(callback)
 }
 
