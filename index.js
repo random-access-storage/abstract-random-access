@@ -114,7 +114,7 @@ Abstract.prototype._close = function (callback) {
 }
 
 Abstract.prototype.end = function (options, callback) {
-  if (typeof opened === 'function') return this.end(null, options)
+  if (typeof options === 'function') return this.end(null, options)
   if (!callback) callback = noop
 
   var self = this

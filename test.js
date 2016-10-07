@@ -92,3 +92,14 @@ tape('close', function (t) {
     t.end()
   })
 })
+
+tape('end', function (t) {
+  var storage = random()
+  storage.end({}, function (err) {
+    t.error(err)
+    storage.end(function (err) {
+      t.error(err)
+      t.end()
+    })
+  })
+})
