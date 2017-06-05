@@ -11,7 +11,7 @@
     "inherits": "^2.0.1"
   },
   "devDependencies": {
-    "standard": "^10.0.0-beta.0",
+    "standard": "^10.0.2",
     "tape": "^4.6.0"
   }
 }

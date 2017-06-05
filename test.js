@@ -11,7 +11,7 @@ tape('open before read', function (t) {
     },
     read: function (offset, length, cb) {
       t.pass('reading')
-      cb(null, Buffer(length))
+      cb(null, Buffer.alloc(length))
     }
   })
 
@@ -35,7 +35,7 @@ tape('open before write', function (t) {
     }
   })
 
-  storage.write(0, Buffer(10), function (err) {
+  storage.write(0, Buffer.alloc(10), function (err) {
     t.error(err)
     t.end()
   })
@@ -53,7 +53,7 @@ tape('open only fires once', function (t) {
       }, 100)
     },
     read: function (offset, length, cb) {
-      cb(null, Buffer(length))
+      cb(null, Buffer.alloc(length))
     }
   })
 
