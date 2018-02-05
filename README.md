@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Use [random-access-storage][https://github.com/random-access-storage/random-access-storage] instead.
+Use [random-access-storage](https://github.com/random-access-storage/random-access-storage) instead.
 
 # abstract-random-access
 
